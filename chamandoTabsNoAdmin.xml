@@ -1,0 +1,23 @@
+
+<?xml version="1.0"?>
+<layout>
+    <adminhtml_push_index>
+        <reference name="content">
+            <block type="module_alias/adminhtml_push_grid" name="notification" />
+        </reference>
+    </adminhtml_push_index>
+    <adminhtml_push_edit>
+        <reference name="content">
+            <block type="module_alias/adminhtml_push_edit" name="notification_edit" />
+        </reference>
+        <reference name="left">
+            <block type="module_alias/adminhtml_push_edit_tabs" name="notification_tabs" />
+        </reference>
+    </adminhtml_push_edit>
+    <adminhtml_push_send>
+        <update handle="editor"/>
+        <reference name="content">
+            <block type="module_alias/adminhtml_send" name="notification_send" />
+        </reference>
+    </adminhtml_push_send>
+</layout>
