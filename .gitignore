@@ -3,6 +3,8 @@
 *.log
 *.gz
 *.zip
+*.tar.gz
+*.tar
 *.old
 
 # Created by https://www.gitignore.io/api/phpstorm,sublimetext
