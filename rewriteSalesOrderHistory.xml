@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<config>
+    <modules>
+        <Emm_Sales>
+            <version>1.0.0</version>
+        </Emm_Sales>
+    </modules>
+    <global>
+     <blocks>
+            <emmsales>
+            <class>Emm_Sales_Block</class>
+            </emmsales>
+            <sales>
+            <rewrite>
+                          <order_history>Emm_Sales_Block_Order_History</order_history>
+            </rewrite>        
+        </sales>
+    </blocks>
+</config>
