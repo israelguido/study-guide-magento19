@@ -5,13 +5,13 @@ Mage::app();
 //config
 $username = 'xxxxx';
 $password = 'xxxxx';
-$url = 'http://homologacao.xxx.com.br/spc/';
+$url = 'http://homologacao.xxx.com.br/api/';
 
 //Exemplo 1
 $client = new Zend_Http_Client();
-$client->setUri('http://homologacao.spc.org.br/spc/remoting/rest/validacaoCadastralWebService/validaDadosPessoaFisica/35564894812/IsraelGuido/24121987');
+$client->setUri('http://xxx.com/api');
 $client->setHeaders('Content-Type: application/json');
-$client->setAuth('80808080', '80808083!', Zend_Http_Client::AUTH_BASIC);
+$client->setAuth('xxx', 'xxx!', Zend_Http_Client::AUTH_BASIC);
 $response = $client->request('GET');
 print_r($response->getBody());
 
